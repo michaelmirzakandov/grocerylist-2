@@ -3,7 +3,7 @@
 
 <% current_user.items.each do |item| %>
   <div>
-    <%= item.name %> 
+    <%= item.name %> <a href="/items/<%=item.id%>">Show Item </a>
   </div>
 <% end %>
 
