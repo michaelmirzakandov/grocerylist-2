@@ -1,0 +1,11 @@
+<p> Welcome, <%= current_user.username %>
+<h2> GroceryList </h2>
+
+<% current_user.items.each do |item| %>
+  <div>
+    <%= item.name %> 
+  </div>
+<% end %>
+
+<a href="/items/new">Create Item </a>
+<a href="/logout">Log Out </a>
